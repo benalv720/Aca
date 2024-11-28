@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Our Love Story</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+	<!-- <audio autoplay loop>
+		<source src="asset/Shane Filan - Beautiful In White (Official Video) (1).mp3"
+		/>
+	  </audio> -->
+    <style type="text/css">
+      @font-face {
+        font-family: digit;
+        src: url("digital.ttf") format("truetype");
+      }
+    </style>
+    <link href="css/default.css" type="text/css" rel="stylesheet" />
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/garden.js"></script>
+    <script type="text/javascript" src="js/functions.js"></script>
+  </head>
+
+  <body>
+    <div id="mainDiv">
+      <div id="content">
+        <div id="code">
+          <span class="comments">##</span><br />
+          <span class="comments"># Hi i am a programmer,</span><br />
+          <span class="comments"
+            ># so I write code to celebrate Valentine's Day in coder's
+            way.</span
+          ><br />
+          <span class="comments">##</span><br />
+          i = Boy(<span class="string">"Radit"</span>);<br />
+          u = Girl(<span class="string">"Aca/ara"</span>);<br />
+          <span class="comments"
+            ># Nov 27, 2024, I meet you because of Anonymouse Bot 2024. </span
+          ><br />
+          i.meet(u)<br />
+          <span class="comments"># Afterwards, I confessed to you. </span><br />
+          i.confess(u)<br />
+          <span class="comments"
+            ># Nov 27, 2024, You became my girlfriend Maybe?? HAHAHA.</span
+          ><br />
+          u.accepted(i)<br />
+          <span class="comments"
+            ># Since then, we spent harmony happiness life every day.</span
+          ><br />
+          happy(u, i)<br />
+          <span class="comments"># We enjoy studying together.</span><br />
+          study(u, i)<br />
+          <span class="comments"># We always laugh</span><br />
+          dine(u, i)<br />
+          <span class="comments"># We enjoy appointment together.</span><br />
+          appoint(u, i)<br />
+          <span class="comments"># We enjoy vacation together.</span><br />
+          vacation(u, i)<br />
+          <span class="comments"
+            ># Sometimes there are a few conflicts between us.</span
+          ><br />
+          conflict(u, i, sometimes=<span class="keyword">True</span>)<br />
+          <span class="comments"
+            ># But we are getting more and more in harmony together.</span
+          ><br />
+          u.in_harmony_with(i) <br />
+          i.in_harmony_with(u) <br />
+          <span class="comments"># You are the greatest love of my life.</span
+          ><br />
+          while <span class="keyword">True</span>:<br />
+          <span class="placeholder"></span
+          ><span class="keyword">if</span> u.with(i):<br />
+          <span class="placeholder"></span><span class="placeholder"></span>u =
+          everything<br />
+          <span class="placeholder"></span
+          ><span class="keyword">else</span>:<br />
+          <span class="placeholder"></span
+          ><span class="placeholder"></span>everything = u<br />
+          <span class="comments"
+            ># Waiting me marries you, we will be the happiest couple in the
+            world.</span
+          ><br />
+          i.marry(u, in_the_future=<span class="keyword">True</span>)<br />
+          i.live_happily_forever_with(u)<br />
+          <span class="comments"># I love you forever.</span><br />
+        </div>
+        <div id="loveHeart">
+          <canvas id="garden"></canvas>
+          <div id="words">
+            <div id="messages">
+              Radit, I have fallen in love with you for
+              <div id="elapseClock"></div>
+            </div>
+            <div id="loveu">
+              Love u forever and ever.<br />
+              <div class="signature">- | Helsa Anastasya</div>
+            </div>
+          </div>
+        </div>
+      </div>
+	  <div class="photo-card" data-aos="flip-right" data-aos-delay="150" data-aos-duration="1000">
+		<div class="poto-1">
+			<img src="asset/card1.jpg" alt="Helsa Anastasya's Photo" />
+			<div class="content">
+				<h1 class="name">Anastasya</h1>
+				<p class="description">Ketika senyuman sederhana saja bisa membuat dunia jadi lebih indah, pasti ada cahaya di balik setiap tatapan manismu. 🌸✨</p>
+			</div>
+		</div>
+		<div class="poto-2">
+			<img src="asset/card2.jpg" alt="Helsa Anastasya's Photo" />
+			<div class="content">
+				<h1 class="name">Anastasya</h1>
+				<p class="description">Ketika senyuman sederhana saja bisa membuat dunia jadi lebih indah, pasti ada cahaya di balik setiap tatapan manismu. 🌸✨</p>
+			</div>
+		</div>
+		<div class="poto-3">
+			<img src="asset/card3.jpg" alt="Helsa Anastasya's Photo" />
+			<div class="content">
+				<h1 class="name">Anastasya</h1>
+				<p class="description">Ketika senyuman sederhana saja bisa membuat dunia jadi lebih indah, pasti ada cahaya di balik setiap tatapan manismu. 🌸✨</p>
+			</div>
+		</div>
+	  </div>
+      <div id="copyright">©Copyright Radit 2024</div>
+    </div>
+    <script type="text/javascript">
+      var offsetX = $("#loveHeart").width() / 2;
+      var offsetY = $("#loveHeart").height() / 2 - 55;
+      var together = new Date();
+      together.setFullYear(2024, 11, 27);
+      together.setHours(15);
+      together.setMinutes(0);
+      together.setSeconds(0);
+      together.setMilliseconds(0);
+
+      if (!document.createElement("canvas").getContext) {
+        var msg = document.createElement("div");
+        msg.id = "errorMsg";
+        msg.innerHTML =
+          "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+";
+        document.body.appendChild(msg);
+        $("#code").css("display", "none");
+        $("#copyright").css("position", "absolute");
+        $("#copyright").css("bottom", "10px");
+        document.execCommand("stop");
+      } else {
+        setTimeout(function () {
+          startHeartAnimation();
+        }, 5000);
+
+        timeElapse(together);
+        setInterval(function () {
+          timeElapse(together);
+        }, 500);
+
+        adjustCodePosition();
+        $("#code").typewriter();
+      }
+    </script>
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script>
+	  AOS.init();
+	</script>
+  </body>
+</html>
